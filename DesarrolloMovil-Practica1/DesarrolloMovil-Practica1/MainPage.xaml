@@ -4,18 +4,23 @@
              x:Class="DesarrolloMovil_Practica1.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#EE0100" Padding="24" CornerRadius="0">
+            <Label Text="Harold Rodriguez - 1088464" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
+        <Label Text="Práctica 1 (Valor 10pts)" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="En esta asignacion fueron modificadas mas de 3 propiedades de  de la interfaz gráfica de la página de inicio de un proyecto de Xamarin Forms" FontSize="16" Padding="30,0,30,0"/>
+        <Label Padding="30,10,30,0">
             <Label.FormattedText>
                 <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
+                    <Span Text="Link a repositorio de GitHub: "/>
+                    <Span Text="Desarrollo Movil Practica 1"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://github.com/Haroldarp/DesarrolloMovil-Practica1.git" />
+                        </Span.GestureRecognizers>
+                    </Span>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
